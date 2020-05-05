@@ -1,0 +1,45 @@
+@extends ('connect.master')
+
+@section('title', 'Login')
+
+@section('content')
+<div class="box shadow">
+    <form>
+        <div class="form-group">
+            <label for="email exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        </div>
+        <div class="form-group">
+            <label for="password exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" required>
+        </div>
+
+        <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+
+
+    @if(Session::  has('message'))
+        <div class="container">
+            <div class="alert alert-{{ Session::get('typealert') }}"style="display:none;">
+                {{ Session::get('message') }}
+                @if ($errors->any())
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+                @endif
+                <script>
+                    $('.alert').slideDown();
+                    setTimeout(function(){ $(.alert).slideUp(); }, 10000);
+                </script>
+            </div>
+        </div>
+    @endif
+
+    <div class="pie">
+        <a href="{{ url('/register') }}"> ¿No tienes una cuenta?, Registrate</a>
+        <a href="{{ url('/recover') }}"> Recuperar contraseña</a>
+    </div>
+</div>
+@stop
