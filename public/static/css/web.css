@@ -1,5 +1,4 @@
 body{
-    background-color: beige;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,17 +6,42 @@ h2,h3,h4,h5,ul,body,html{
     padding: 0;
     margin: 0;
 }
+/*------- Master -------**/
 .wrapper{
-    min-height: 100vh;
+    min-height: 93vh;
     overflow: hidden;
 }
 .col1{
     float: left;
-    position: relative;
-    z-index: inherit 999;
-    width: 17%;
+    position: fixed;
+    width: 25%;
 }
 .col2{
-    float: left;
-    width: 83%;
+    float: right;
+    bottom: 0;
+    width: 75%;
+}
+/*------- Navbar -------**/
+.navbar{
+    position: fixed;
+    min-height: 7vh;
+    width: 100%;
+    background-color: #ccc;
+}
+/*------- Sidebar -------**/
+.sidebar{
+    min-height: 100vh;
+}
+
+.section-top{
+}
+
+.logo{
+    display: block;
+    width: 70%;
+    margin: 30% auto 0 auto;
+}
+.nav{
+    width: 70%;
+    margin: 0 auto;
 }
