@@ -40,7 +40,6 @@ class UserController extends Controller
         $user->country = $request->input('country');
         $user->password = $request->input('password');
 
-
         if($user->save()) {
             return new UserResource($user);
         }
