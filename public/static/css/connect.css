@@ -1,5 +1,5 @@
 body{
-    background-color: #ccc;
+    background-color: #f1ece7;
 }
 .box{
     background-color: #fff;
@@ -7,13 +7,15 @@ body{
     border: 1px solid #ccc;
     width: 500px;
     padding: 16px;
-    left: calc (50% - 250px);
-    margin: 100px;
-   
+    margin: 80px auto;
+}
+.logo-cnt{
+    text-align: center;
 }
 .btn{
     width: 100%;
 }
+
 .pie{
     text-align: center;
 }
