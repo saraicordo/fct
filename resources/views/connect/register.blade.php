@@ -4,8 +4,12 @@
 
 @section('content')
 <div class="box shadow">
-    <form>
 
+    <div class="logo-cnt">
+        <img src="{{ url('static/images/logo.png') }}" class="img-fluid" style="width: 70%;">
+    </div>
+
+    <form>
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" class="form-control" required>

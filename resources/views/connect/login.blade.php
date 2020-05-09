@@ -4,6 +4,11 @@
 
 @section('content')
 <div class="box shadow">
+
+    <div class="logo-cnt">
+        <img src="{{ url('static/images/logo.png') }}" class="img-fluid" style="width: 70%;">
+    </div>
+
     <form>
         <div class="form-group">
             <label for="email exampleInputEmail1">Email address</label>
