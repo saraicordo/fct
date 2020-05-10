@@ -1,0 +1,132 @@
+/*------- Normalizador -------**/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1ece7;
+    padding: 0 10vw;
+}
+h1,h2,h3,h4,h5,ul,p,a{
+    color: #62411e;
+}
+h2,h3,h4,h5,ul,html{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-weight: 700;
+    font-size: 1.8vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 1.6vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+h3{
+    font-size: 1.6vw;
+    letter-spacing: 0.05em;
+}
+p{
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+}
+
+a{
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 15px;
+}
+a:hover{
+    color:#ba9b77;
+  }
+ul{
+    list-style-type: none !important;
+}
+@media only screen and (max-width: 900px){
+    h1{
+        font-size: 18px;
+    }
+    h2, h3{
+        font-size: 13px;
+    }
+    p{
+        font-size: 11px;
+    }
+}
+/*------- Master -------**/
+.wrapper{
+    min-height: 100vh;
+    padding-top: 15vh;
+}
+.col1{
+    float: left;
+    position: fixed;
+    width: 20%;
+}
+.col2{
+    float: right;
+    width: 75%;
+}
+
+.jumbotron {
+    background-color: #f1ece7;
+    padding: 0 0 0 6rem;
+}
+hr{
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin-top: 0;
+}
+/*------- Navbar -------**/
+.navbar{
+    position: fixed;
+    z-index: 3;
+    min-height: 15vh;
+    width: 80%;    
+}
+.buscador{
+    border-style: none;
+    width: 50vh;
+    border-bottom: 3px solid black;
+}
+/*------- Sidebar -------**/
+.sidebar{
+    min-height: 100vh;
+}
+
+.logo{
+    display: block;
+    margin: 0 auto;
+}
+.nav{
+    margin: 50px auto;
+}
+.nav-item a{
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+/*------- Productos -------**/
+
+.card-img-top{
+    padding: 20px 30px;
+}
+
+
+
+/*------- Footer -------**/
+footer{
+    width: 100%;
+    max-width: 1920px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.copyright{
+    width: 500px;
+    margin: auto;
+}
+

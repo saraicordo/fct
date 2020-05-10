@@ -1,0 +1,26 @@
+body{
+    background-color: #f1ece7;
+}
+.box{
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 500px;
+    padding: 16px;
+    margin: 80px auto;
+}
+.logo-cnt{
+    text-align: center;
+}
+.btn{
+    width: 100%;
+}
+
+.pie{
+    text-align: center;
+}
+.pie a{
+    display: inline-block;
+    font-size: .8rem;
+    padding: 1rem;
+}
