@@ -1,7 +1,7 @@
     <div class="navbar d-flex  bd-highlight">
 
     <form class="form-inline">
-        <input type="search" placeholder="Search" aria-label="Search">
+        <input class="buscador" type="search" placeholder="Search" aria-label="Search">
         <button type="submit">Search</button>
     </form>
 
