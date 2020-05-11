@@ -85,7 +85,11 @@ hr{
     position: fixed;
     z-index: 3;
     min-height: 15vh;
-    width: 80%;    
+    width: 80%;
+    background-color: rgba(241, 236, 231, 0.9);
+}
+.form-inline{
+    margin-left: 30%;
 }
 .buscador{
     border-style: none;
