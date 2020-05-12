@@ -91,6 +91,7 @@ hr{
 .form-inline{
     margin-left: 30%;
 }
+
 button[type=submit]{
     background-color:transparent;
     border-style: none;
@@ -104,6 +105,10 @@ button[type=submit]:hover{
     border-bottom: 3px solid black;
     background-color: rgba(241, 236, 231, 0.1);
 }
+.buscador:focus{
+    outline:none;
+}
+
 /*------- Sidebar -------**/
 .sidebar{
     min-height: 100vh;
