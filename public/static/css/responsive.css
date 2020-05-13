@@ -1,0 +1,184 @@
+/*------------ @MEDIA ONLY -------------*/
+
+@media only screen and (max-width: 900px){
+
+    .col1{
+        display: none;
+    }
+    .col2{
+        width: 100%;
+    }
+    .jumbotron {
+        padding: 0;
+    }
+
+    .menu_responsive{
+        background: rgba(250,250,250,.8);
+    }
+    .nav-toggle{
+        display: block !important;
+    }
+    .cruz span{
+        opacity: 1;
+        width: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 400px){
+
+    .nav-toggle span {
+         width: 30px;
+    }
+    .nav-toggle{
+        right: 0px;
+        top: 10px;
+    }
+}
+@media only screen and (min-width: 900px){
+    ul.menu_2{
+        display: none;
+    }
+    .menu_responsive{
+        background: rgba(250,250,250,0);
+    }
+    .cruz span{
+        opacity: 0;
+    }
+}
+
+/*------------ Menu resposive -------------*/
+.menu_responsive{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: rgba(250,250,250,.8);
+    transition: all 1s ease-in-out;
+    animation:opacidad ease-in-out 1s;
+}
+ul.menu_2{
+    display: flex;
+    margin: 0;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: middle;
+    height: 100%;
+}
+ul.menu_2 a{
+    display: block;
+    padding: 10px;
+    font-size: 25px;
+    transition: all 0.2s ease-in-out;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.nav_desplegable_2{
+    padding-left: 15px;
+    justify-content: start;
+    display: none;
+}
+
+/*----- Animación menu ------*/
+ul.menu_2 li:nth-child(4){
+    animation:opacidad ease-in-out 0.4s;
+    animation:menubaja ease-in-out 0.4s;
+}
+ul.menu_2 li:nth-child(3){
+    animation:opacidad ease-in-out 0.6s;
+    animation:menubaja ease-in-out 0.6s;
+}
+ul.menu_2 li:nth-child(2){
+    animation:opacidad ease-in-out 0.8s;
+    animation:menubaja ease-in-out 0.8s;
+}
+ul.menu_2 li:nth-child(1){
+    animation:opacidad ease-in-out 1s;
+    animation:menubaja ease-in-out 1s;
+}
+
+/*----- Nav toggle ------*/
+.nav-toggle{
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    z-index: 10;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    display: none;
+    overflow: hidden;
+}
+.nav-toggle span {
+    width: 40px;
+    display: block;
+    height: 4px;
+    border-radius: 20px;
+    position: absolute;
+    background-color: #444;
+    opacity: 1;
+    animation:opacidad ease-in-out 1s;
+}
+.nav-toggle span:nth-child(1) {
+    top: 0px;
+    transition: all 0.3s ease-in-out;
+}
+.nav-toggle span:nth-child(2) {
+    top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.nav-toggle span:nth-child(3) {
+    top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/*----- Cruz ------*/
+.cruz span:nth-child(1) {
+    top: 13px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: red;
+    transition: all 0.3s ease-in-out;
+    -webkit-animation:opacidad ease-in-out 1s;
+    animation:opacidad ease-in-out 1s;
+}
+.cruz span:nth-child(2) {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    left: -30px;
+}
+.cruz span:nth-child(3) {
+    top: 13px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-color: red;
+    transition: all 0.3s ease-in-out;
+    -webkit-animation: opacidad ease-in-out 1s;
+    animation:opacidad ease-in-out 1s;
+}
+/*----- Animaciones ------*/
+@keyframes opacidad{
+    0%{opacity:0;
+    }
+    100%{opacity:1;
+    } 
+}
+@keyframes menubaja{
+    0%{transform: translateY(-100px);
+    }
+    
+    100%{transform: translateY(0px);
+    } 
+}
+
+
+

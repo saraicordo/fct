@@ -108,6 +108,10 @@ hr{
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
+.nav_desplegable{
+    padding-left: 15px;
+    display: none;
+}
 /*------- Productos -------**/
 
 .card-img-top{
