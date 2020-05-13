@@ -22,7 +22,37 @@
         opacity: 1;
         width: 40px;
     }
+    .logo_responsive{
+        display: block !important;
+        width: 70%;
+        margin: auto;
+    }
+    .navbar{
+        position: relative;
+        width: 100%;
+        padding: 0;
+        margin: auto;
+    }
+    .wrapper {
+        padding-top: 0;
+    }
+    .dropdown-menu{
+        min-width: 5rem;
+    }
+    .buscador{
+        width: 40vw;
+    }
+    /*----- Responsive connect ------*/
+    .box{
+        width: 70%;
+        padding: 16px;
+        margin: 20% auto;
+    }
+    .pie a:nth-child(2){
+        padding-top: 0;;
+    }
 }
+
 
 
 @media only screen and (max-width: 400px){
@@ -45,6 +75,11 @@
     .cruz span{
         opacity: 0;
     }
+}
+
+/*------------ Logo resposive -------------*/
+.logo_responsive{
+    display: none;
 }
 
 /*------------ Menu resposive -------------*/
@@ -121,7 +156,7 @@ ul.menu_2 li:nth-child(1){
     height: 4px;
     border-radius: 20px;
     position: absolute;
-    background-color: #444;
+    background-color: #62411e;;
     opacity: 1;
     animation:opacidad ease-in-out 1s;
 }
