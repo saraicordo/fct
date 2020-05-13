@@ -29,5 +29,7 @@
                 </div>
             @endif
 
+        @include('web.menu_responsive')
+
     </div>
     </div>
