@@ -10,7 +10,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link dropdown-toggle" href="#">Categories</a>
+            <a class="nav-link dropdown-toggle flecha" href="#">Categories</a>
             <ul class="nav_desplegable flex-column">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Category 1</a>
@@ -40,7 +40,7 @@
 
 <script>
     $(document).ready(function(){
-        $('.dropdown-toggle').click(function(){
+        $('.flecha').click(function(){
             $('.nav_desplegable').slideToggle("slow");
         });
     });
