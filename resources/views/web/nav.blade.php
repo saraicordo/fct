@@ -2,7 +2,7 @@
 
     <form class="form-inline">
         <input class="buscador" type="search" placeholder="Search" aria-label="Search">
-        <button type="submit">Search</button>
+        <button type="submit"><i class="fas fa-search"></i></button>
     </form>
 
 
