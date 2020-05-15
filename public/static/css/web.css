@@ -149,16 +149,19 @@ footer{
     min-height: 80px;  
     font-size: 12px;
     text-align: center;
-    background-color: yellow;
+    background-color: #f1ece7;
 }
 .fa-twitter, .fa-facebook, .fa-instagram {
     float:left;
     padding: 0 20px 35px 10px;
     font-size: 35px;
     float:left;
-    background-color: green;
+    background-color: #f1ece7;
 }
 .copyright{
     width: 20vw;
     margin: auto;
+}
+.about{
+    text-align: justify;
 }
