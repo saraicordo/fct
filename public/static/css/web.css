@@ -141,7 +141,25 @@ button[type=submit]:hover{
     padding: 20px 30px;
 }
 
-
+/*------- About -------**/
+.about{
+    text-align: justify;
+}
+.about1{
+    width: 150px;
+    padding-right: 20px;
+    float: left;
+}
+.about2{
+    width: 175px;
+    padding-left: 20px;
+    float: right;
+}
+.about3{
+    width: 175px;
+    padding-right: 20px;
+    float: left;
+}
 
 /*------- Footer -------**/
 footer{
@@ -161,7 +179,4 @@ footer{
 .copyright{
     width: 20vw;
     margin: auto;
-}
-.about{
-    text-align: justify;
 }
