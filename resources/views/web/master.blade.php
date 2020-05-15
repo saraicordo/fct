@@ -33,7 +33,7 @@
             </div>
          </div>
     </div>
-
+    
     @include('web.footer')
     
 </body>

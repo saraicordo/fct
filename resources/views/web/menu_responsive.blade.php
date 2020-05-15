@@ -2,8 +2,9 @@
         <ul class="menu_2">
             <li><a href="#"><span class="current">home</span></a>
             </li>
-            <li><a href="" class="nav-link dropdown-toggle flecha">categories</a>
+            <li><a href="" class="nav-link dropdown-toggle flecha2">categories</a>
                 <ul class="nav_desplegable_2 flex-column">
+                
                     <li class="nav-item">
                         <a class="nav-link" href="#">Category 1</a>
                     </li>
@@ -46,10 +47,9 @@
             });
 
 
-            $('.flecha').click(function(){
+            $('.flecha2').click(function(){
                 $('.nav_desplegable_2').slideToggle();
             });
         });
-
 
     </script> 

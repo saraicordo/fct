@@ -36,7 +36,14 @@
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
         
-        </ul>
+    </ul>
+
+    <div class="social-nets">
+        <ul><i class="fab fa-twitter"></i></ul>
+        <ul><i class="fab fa-facebook"></i></ul>
+        <ul><i class="fab fa-instagram"></i></ul>
+    </div>
+</div>
 
 <script>
     $(document).ready(function(){
@@ -45,5 +52,3 @@
         });
     });
 </script>
-
-</div>

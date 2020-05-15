@@ -22,5 +22,4 @@
         </div>
     </div>
 
-     <hr class="my-4" style="max-width: 700px; margin-left:0;">
 @stop
