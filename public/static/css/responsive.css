@@ -42,6 +42,9 @@
     .buscador{
         width: 40vw;
     }
+    .social-nets-responsive{
+        display: block;
+    }
     /*----- Responsive connect ------*/
     .box{
         width: 70%;

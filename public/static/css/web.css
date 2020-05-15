@@ -3,7 +3,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f1ece7;
     padding: 0 10vw;
-    width: 100%;
 }
 h1,h2,h3,h4,h5,ul,p,a{
     color: #62411e;
@@ -60,7 +59,7 @@ ul, li{
 }
 /*------- Master -------**/
 .wrapper{
-    min-height: 100vh;
+    height: 100vh;
     padding-top: 15vh;
 }
 .col1{
@@ -116,10 +115,6 @@ button[type=submit]:hover{
     right: 0;
 }
 /*------- Sidebar -------**/
-.sidebar{
-    min-height: 100vh;
-}
-
 .logo{
     display: block;
     margin: 0 auto;
@@ -134,6 +129,15 @@ button[type=submit]:hover{
 .nav_desplegable{
     padding-left: 15px;
     display: none;
+}
+.fab{
+    float:left;
+    padding: 0 20px 35px 10px;
+    font-size: 30px;
+    background-color: #f1ece7;
+}
+.fab:hover{
+    color:#ba9b77
 }
 /*------- Productos -------**/
 
@@ -163,20 +167,33 @@ button[type=submit]:hover{
 
 /*------- Footer -------**/
 footer{
-    width: 100%;
-    min-height: 80px;  
-    font-size: 12px;
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    margin-bottom: 2rem;
     text-align: center;
-    background-color: #f1ece7;
 }
-.fa-twitter, .fa-facebook, .fa-instagram {
-    float:left;
-    padding: 0 20px 35px 10px;
-    font-size: 35px;
-    float:left;
+.social-nets-responsive{
+    display: none;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+.social-nets-responsive ul{
+    display: inline-block;
+}
+.social-nets-responsive i{
+    float: none;
+    font-size: 20px;
     background-color: #f1ece7;
+    padding-bottom: 0;
 }
 .copyright{
-    width: 20vw;
     margin: auto;
+    text-align: center;
+}
+.copyright p{
+    font-size: 11px;
+    margin-bottom: 0;
 }
