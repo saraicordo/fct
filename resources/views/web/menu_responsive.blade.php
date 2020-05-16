@@ -2,17 +2,13 @@
         <ul class="menu_2">
             <li><a href="#"><span class="current">home</span></a>
             </li>
-            <li><a href="" class="nav-link dropdown-toggle flecha">categories</a>
+            <li><span class="nav-link dropdown-toggle flecha">categories</span>
                 <ul class="nav_desplegable_2 flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Category 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Category 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Category 3</a>
-                    </li>
+                    @foreach ($categories as $category)
+                        <li class="nav-item">
+                            <a class="nav-link" href="">{{$category->name}}</a>
+                        </li>
+                    @endforeach
                 </ul>
             </li>
             <li><a href="">about us</a>
