@@ -1,5 +1,5 @@
 <?php
-
+use App\Category;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,21 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('web.index');
-});
 
-Route::get('/products', function () {
-    return view('web.products.products');
-});
-Route::get('/product', function () {
-    return view('web.products.product');
-});
-
-Route::get('/about', function () {
-    return view('web.about');
-});
-
+Route::get('/', 'ViewController@index');
+Route::get('/products', 'ViewController@products');
+Route::get('/product/{id}', 'ViewController@product');
+Route::get('/category/{id}', 'ViewController@category');
+Route::get('/about', 'ViewController@about');
 
 //Ruta autentificación
 Route::get('/login', 'ConnectController@getLogin')->name('login');
@@ -33,6 +24,3 @@ Route::post('/login', 'ConnectController@postLogin')->name('login');
 Route::get('/register', 'ConnectController@getRegister')->name('register');
 Route::post('/register', 'ConnectController@postRegister')->name('register');
 Route::get('/logout', 'ConnectController@getLogout')->name('logout');
-
-//Ruta productos
-// Route::get('/products', 'ProductController@getAddProduct');
