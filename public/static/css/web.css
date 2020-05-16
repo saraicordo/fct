@@ -115,9 +115,6 @@ button[type=submit]:hover{
     text-align: right;
     right: 0;
 }
-.dropdown-menu {
-    background: rgba(250,250,250,.8);
-}
 .dropdown-item {
     font-weight: 600;
     color: #62411e;
@@ -148,6 +145,11 @@ button[type=submit]:hover{
 }
 .fab:hover{
     color:#ba9b77
+}
+/*------- Index -------**/
+.display-4{
+    font-size: 3rem;
+    padding-top: 20px;
 }
 /*------- Productos -------**/
 .card-img{
