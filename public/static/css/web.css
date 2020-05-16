@@ -59,13 +59,14 @@ ul, li{
 }
 /*------- Master -------**/
 .wrapper{
-    height: 100vh;
+    height: 90vh;
     padding-top: 15vh;
 }
 .col1{
     float: left;
     position: fixed;
     width: 20%;
+    background-color: #f1ece7;
 }
 .col2{
     float: right;
@@ -144,13 +145,14 @@ button[type=submit]:hover{
     float:left;
     padding: 0 20px 35px 10px;
     font-size: 30px;
-    background-color: #f1ece7;
 }
 .fab:hover{
     color:#ba9b77
 }
 /*------- Productos -------**/
-
+.card-img{
+   
+}
 .card-img-top{
     padding: 20px 30px;
 }
