@@ -1,12 +1,12 @@
 @extends ('web.master')
 
-@section('title', 'NombreCategoría')
+@section('title', "{{$category->name}}")
 
 @section('content')
-    <h2>Nombre categoría</h2>
+    <h2>{{$category->name}}</h2>
     <hr class="my-4">
     <div class="row row-cols-1 row-cols-md-3">
-        @foreach ($products as $product) 
+        @foreach ($products as $product)
             <div class="col mb-4">
                 <div class="card .h-100">
                     <a href={{ URL::action('ViewController@product', $product->id) }}>

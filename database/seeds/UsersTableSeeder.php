@@ -27,8 +27,8 @@ class UsersTableSeeder extends Seeder
             'username' => 'laura.belle',
             'email' => 'laura.belle@gmail.com',
             'name' => 'Laura',
-            'surname1' => 'Laura',
-            'surname2' => 'Belle',
+            'surname1' => 'Belle',
+            'surname2' => 'Bestia',
             'city' => 'Madrid',
             'country' => 'España',
             'password' => 'laurabelle2'
