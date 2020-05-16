@@ -13,12 +13,20 @@ class ProductsTableSeeder extends Seeder
     public function run()
     {
         Product::create([
-            'name' => 'Producto 1',
-            'description' => 'Esto es la descripción del producto',
-            'category_id' => 1,
+            'name' => 'Titanic Necklace',
+            'description' => 'This necklace was found in the Titanic',
+            'category_id' => 4,
             'image' => '',
             'price' => 15000,
-            'user_id' => 2
+            'user_id' => 1,
+        ]);
+        Product::create([
+            'name' => 'Oak Table',
+            'description' => 'This table was found in the black forest, in Germany',
+            'category_id' => 1,
+            'image' => '',
+            'price' => 2000,
+            'user_id' => 1,
         ]);
     }
 }

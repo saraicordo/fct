@@ -137,6 +137,8 @@ button[type=submit]:hover{
 .nav_desplegable{
     padding-left: 15px;
     display: none;
+    overflow: auto;
+    max-height: 25vh;
 }
 .fab{
     float:left;
