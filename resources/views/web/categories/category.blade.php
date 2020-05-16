@@ -11,7 +11,7 @@
                 <div class="card .h-100">
                     <a href={{ URL::action('ViewController@product', $product->id) }}>
                         <div class="card-img">
-                            <img src="{{ url('static/images/logo.png') }}" class="img-fluid, card-img-top" alt="...">
+                            <img src="{{ asset('static/images/products/' . $product->id . '.png') }}" class="img-fluid, card-img-top" alt="...">
                         </div>
                         <div class="card-body">
                         <h5 class="card-title">{{$product->name}}</h5>
