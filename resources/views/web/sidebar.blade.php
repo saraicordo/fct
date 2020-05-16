@@ -16,6 +16,12 @@
         <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
     </ul>
 
+    <div class="social-nets">
+        <ul><i class="fab fa-twitter"></i></ul>
+        <ul><i class="fab fa-facebook"></i></ul>
+        <ul><i class="fab fa-instagram"></i></ul>
+    </div>
+
     <script>
         $(document).ready(function(){
             $('.flecha').click(function(){

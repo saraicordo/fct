@@ -14,10 +14,10 @@
         <div class="wrapper">
             <div class="col1">@include('web.sidebar')</div>
             <div class="col2">
-            <div class="jumbotron">
-                @section('content')
-                @show
-            </div>
+                <div class="jumbotron">
+                    @section('content')
+                    @show
+                </div>
             </div>
         </div>
 

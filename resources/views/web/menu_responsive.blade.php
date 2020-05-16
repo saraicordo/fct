@@ -38,14 +38,13 @@
             });
             
             $('.nav-toggle').click(function(){
-              $('.menu_responsive').slideToggle();
+                $('.menu_responsive').slideToggle();
+
+                $('.flecha2').click(function(){
+                    $('.nav_desplegable_2').slideToggle();
+                });
             });
 
-
-            $('.flecha').click(function(){
-                $('.nav_desplegable_2').slideToggle();
-            });
         });
-
 
     </script> 
