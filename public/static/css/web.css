@@ -114,13 +114,23 @@ button[type=submit]:hover{
     text-align: right;
     right: 0;
 }
+.dropdown-menu {
+    background: rgba(250,250,250,.8);
+}
+.dropdown-item {
+    font-weight: 600;
+    color: #62411e;
+}
+.dropdown-item:hover{
+    color:#ba9b77;
+}
 /*------- Sidebar -------**/
 .logo{
     display: block;
     margin: 0 auto;
 }
 .nav{
-    margin: 40px auto;
+    margin: 30px auto;
 }
 .nav-item a{
     letter-spacing: 0.2em;
@@ -172,6 +182,7 @@ footer{
     margin: auto;
     margin-bottom: 2rem;
     text-align: center;
+    clear: both;
 }
 .social-nets-responsive{
     display: none;

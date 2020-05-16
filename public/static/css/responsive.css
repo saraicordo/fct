@@ -34,7 +34,7 @@
         margin: auto;
     }
     .wrapper {
-        padding-top: 0;
+        padding-top: 3vh;
     }
     .dropdown-menu{
         min-width: 5rem;
@@ -44,6 +44,12 @@
     }
     .social-nets-responsive{
         display: block;
+    }
+    .nav-link {
+        padding: .5rem 0 .5rem 1rem;
+    }
+    .dropdown-menu {
+        left: -80px;
     }
     /*----- Responsive connect ------*/
     .box{
@@ -56,8 +62,6 @@
     }
 }
 
-
-
 @media only screen and (max-width: 400px){
 
     .nav-toggle span {
@@ -68,17 +72,7 @@
         top: 10px;
     }
 }
-@media only screen and (min-width: 900px){
-    ul.menu_2{
-        display: none;
-    }
-    .menu_responsive{
-        background: rgba(250,250,250,0);
-    }
-    .cruz span{
-        opacity: 0;
-    }
-}
+
 
 /*------------ Logo resposive -------------*/
 .logo_responsive{
@@ -102,7 +96,6 @@ ul.menu_2{
     display: flex;
     margin: 0;
     padding: 20px;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
