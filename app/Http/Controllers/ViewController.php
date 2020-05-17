@@ -33,6 +33,7 @@ class ViewController extends Controller
             'products' => Product::where('category_id', $id)->get(),
             'categories' => Category::all(),
             'category' => $category,
+            'user' => User::find(1),
         ]);
     }
 
@@ -48,7 +49,7 @@ class ViewController extends Controller
         ]);
     }
     
-    public function cart($id) {
+    public function cart() {
         $products = Product::where('user_id', '1')->get();
 
         return view('web.shop.cart', [

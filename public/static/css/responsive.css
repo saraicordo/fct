@@ -78,13 +78,33 @@
     } 
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 500px){
     .nav-toggle span {
          width: 30px;
     }
     .nav-toggle{
         right: 0px;
         top: 10px;
+    }
+    .cart{
+        flex-direction: column;
+        height: 250px;
+        justify-content: space-between;
+    }
+    .img-cart{
+        width: 100%;
+    }
+    .cart-2{
+        margin-top: 20px;
+        padding: 0 25px;
+        width:80%;
+        border-left: none;
+    }
+    .cart-subtotal-2{
+        flex-direction: column;
+    }
+    .btn-success{
+        margin-top: 1rem ;
     }
 }
 
