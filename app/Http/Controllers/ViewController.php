@@ -4,18 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
-use App\Http\Resources\User;
 use App\Product;
+use App\User;
 
 
 class ViewController extends Controller
 {
     public function index() {
-        return view('web.index', ['categories' => Category::all()]);
-    }
-
-    public function products() {
-        return view('web.products.products', [
+        return view('web.home', [
             'categories' => Category::all(),
             'products' => Product::all(),
         ]);
@@ -49,6 +45,16 @@ class ViewController extends Controller
     public function contact() {
         return view('web.contact', [
             'categories' => Category::all(),
+        ]);
+    }
+    
+    public function cart($id) {
+        $products = Product::where('user_id', '1')->get();
+
+        return view('web.shop.cart', [
+            'categories' => Category::all(),
+            'products' => $products,
+            'user' => User::find(1),
         ]);
     }
 }

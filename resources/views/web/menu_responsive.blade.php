@@ -1,19 +1,19 @@
     <div class="menu_responsive">
         <ul class="menu_2">
-            <li><a href="#"><span class="current">home</span></a>
+            <li><a href="/"><span class="current">home</span></a>
             </li>
-            <li><span class="nav-link dropdown-toggle flecha">categories</span>
+            <li><span class="nav-link dropdown-toggle flecha2">categories</span>
                 <ul class="nav_desplegable_2 flex-column">
                     @foreach ($categories as $category)
                         <li class="nav-item">
-                            <a class="nav-link" href="">{{$category->name}}</a>
+                            <a class="nav-link" href="{{ URL::action('ViewController@category', $category->id) }}">{{$category->name}}</a>
                         </li>
                     @endforeach
                 </ul>
             </li>
-            <li><a href="">about us</a>
+            <li><a href="/about">about us</a>
             </li>
-            <li><a href="">contact</a></li>
+            <li><a href="/contact">contact</a></li>
         </ul>
     </div>
 

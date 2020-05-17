@@ -9,13 +9,14 @@
     <div class="card mb-3" style="max-width: 700px; padding: 50px;">
         <div class="row no-gutters">
             <div class="col-md-5">
-                <img src="{{ url('static/images/collar.jpg') }}" class="card-img img-fluid" alt="...">
+                <img src="{{ asset('static/images/products/' . $product->id . '.png') }}" class="card-img img-fluid" alt="...">
             </div>
             <div class="col-md-7">
                 <div class="card-body">
                     <h5 class="card-title">Description</h5>
                     <p class="card-text">{{$product->description}}</p>
-                    <p class="card-text"><small class="text-muted">Add to cart</small></p>
+                    <span class="price-tag">${{ number_format($product->price / 100, 2) }} €</span>
+                    <small class="text-muted float-right">Add to cart</small>
                 </div>
             </div>
         </div>
