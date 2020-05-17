@@ -17,6 +17,7 @@ Route::get('/products', 'ViewController@products');
 Route::get('/product/{id}', 'ViewController@product');
 Route::get('/category/{id}', 'ViewController@category');
 Route::get('/about', 'ViewController@about');
+Route::get('/cart/{id}', 'ViewController@cart');
 
 //Ruta autentificación
 Route::get('/login', 'ConnectController@getLogin')->name('login');

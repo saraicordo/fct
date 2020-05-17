@@ -9,8 +9,10 @@
             <button type="submit"><i class="fas fa-search"></i></button>
         </form>
 
+        <i class="fas fa-shopping-cart icon-cart" href="{{ URL::action('ViewController@cart', '1') }}"></i>
+        
         @if (Route::has('login'))
-            <div class="iconos_nav">
+            <div class="iconos_nav">                
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fas fa-user"></i>

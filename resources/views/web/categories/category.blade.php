@@ -20,6 +20,13 @@
                     </a>
                     <div class="card-footer">
                         <small class="text-muted">Add to cart</small>
+
+
+                        <a>
+                            <i class="fas fa-cart-plus"></i>
+                        </a>
+
+
                     </div>
                 </div>
             </div>

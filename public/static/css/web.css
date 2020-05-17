@@ -110,9 +110,11 @@ button[type=submit]:hover{
 .buscador:focus{
     outline:none;
 }
+.icon-cart{
+    color: #62411e;
+}
 .iconos_nav{
     position: absolute;
-    text-align: right;
     right: 0;
 }
 .dropdown-item {
@@ -213,4 +215,23 @@ footer{
 .copyright p{
     font-size: 11px;
     margin-bottom: 0;
+}
+
+/*------- Cart -------**/
+.cart{
+    height: 300px;
+    width: 100%;
+    clear: both;
+}
+.img-cart{
+    height: 200px;
+    width: auto;
+}
+.cart-1{
+    float: left;
+    width: 30%;
+}
+.cart-2{
+    float: right;
+    width:70%;
 }
