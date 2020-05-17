@@ -4,17 +4,17 @@
     </div>
 
     <div class="d-flex flex-row">
-        <form class="form-inline p-2 ">
+        <form class="form-inline p-2">
             <input class="buscador" type="search" placeholder="Search" aria-label="Search">
-            <button type="submit"><i class="fas fa-search"></i></button>
+            <span type="submit"><i class="fas fa-search"></i></span>
         </form>
-        <div class="d-flex flex-row">
-            <div class="p-2 justify-content-end ml-5">
+        <div class="d-flex flex-row p-2">
+            <div class="pt-2 justify-content-end ml-md-5 ml-1">
                 <a href="{{ URL::action('ViewController@cart', '1') }}">
                     <i class=" fas fa-shopping-cart icon-cart"></i>
                 </a>
             </div>
-            <div class="p-0 mr-0">
+            <div>
                 @if (Route::has('login'))
                     <div>
                         <li class="nav-item dropdown">
