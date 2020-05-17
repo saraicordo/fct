@@ -8,7 +8,7 @@
     <div class="row row-cols-1 row-cols-md-3">
         @foreach ($products as $product)
             <div class="col mb-4">
-                <div class="card .h-100">
+                <div class="card .h-100 hover-shadow">
                     <a href={{ URL::action('ViewController@product', $product->id) }}>
                         <div class="card-img">
                             <img src="{{ asset('static/images/products/' . $product->id . '.png') }}" class="img-fluid, card-img-top" alt="...">
