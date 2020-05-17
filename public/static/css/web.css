@@ -43,10 +43,12 @@ a{
 }
 a:hover{
     color:#ba9b77;
-  }
+}
+
 ul, li{
     list-style-type: none !important;
 }
+
 @media only screen and (max-width: 900px){
     h1{
         font-size: 18px;
@@ -146,7 +148,7 @@ button[type=submit]:hover{
     padding: 40px 20px 35px 10px;
     font-size: 30px;
 }
-.fab:hover{
+.fab:hover, .fas:hover {
     color:#ba9b77;
     cursor: pointer;
 }
@@ -182,9 +184,7 @@ button[type=submit]:hover{
 .hover-shadow:hover {
     box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
-.card{
 
-}
 .card-img{
     height: 230px;
     padding: 20px;
@@ -196,10 +196,7 @@ button[type=submit]:hover{
 .card-body{
     height: 100px;
 }
-.
-.card-footer{
-    
-}
+
 .card-img-top{
     padding: 20px 30px;
 }
