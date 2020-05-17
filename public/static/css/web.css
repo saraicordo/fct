@@ -90,10 +90,9 @@ hr{
     position: fixed;
     z-index: 3;
     min-height: 15vh;
-    width: 80%;
+    width: 90%;
     background-color: rgba(241, 236, 231, 0.9);
     justify-content: center;
-    margin: auto;
 }
 
 button[type=submit]{
@@ -117,10 +116,7 @@ button[type=submit]:hover{
 .icon-cart{
     color: #62411e;
 }
-.iconos_nav{
-    position: absolute;
-    right: 0;
-}
+
 .dropdown-item {
     font-weight: 600;
     color: #62411e;
@@ -133,9 +129,7 @@ button[type=submit]:hover{
     display: block;
     margin: 0 auto;
 }
-.nav{
-    margin: 30px auto;
-}
+
 .nav-item a{
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -148,7 +142,7 @@ button[type=submit]:hover{
 }
 .fab{
     float:left;
-    padding: 0 20px 35px 10px;
+    padding: 40px 20px 35px 10px;
     font-size: 30px;
 }
 .fab:hover{
