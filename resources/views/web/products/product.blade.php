@@ -13,9 +13,10 @@
             </div>
             <div class="col-md-7">
                 <div class="card-body">
-                <h5 class="card-title">Description</h5>
+                    <h5 class="card-title">Description</h5>
                     <p class="card-text">{{$product->description}}</p>
-                    <p class="card-text"><small class="text-muted">Add to cart</small></p>
+                    <span class="price-tag">${{ number_format($product->price / 100, 2) }} €</span>
+                    <small class="text-muted float-right">Add to cart</small>
                 </div>
             </div>
         </div>
