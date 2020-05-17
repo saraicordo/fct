@@ -260,20 +260,28 @@ footer{
     margin-bottom: 0;
 }
 
-.contact{
-    border-style: none;
-    width: 100%;
-    border-bottom: 2px solid #62411e;
-    background-color: rgba(241, 236, 231, 0.1);
+/*------- Contact -------**/
+.contact-div{
+    padding: 5% 10%;
+    justify-content: space-between;
 }
 
-.contactbutton[type=submit]{
-    background-color:transparent;
+.contact{
     border-style: none;
-    color: #62411e;
-    padding: auto;
+    width: 90%;
+    border-bottom: 2px solid #62411e;
+    background-color: rgba(241, 236, 231, 0.1);
+    justify-content: space-between;
 }
-br { display: none; }
+.contact:focus{
+    outline: none;
+}
+.label-contact{
+    width: 100% !important;
+}
+#exampleFormControlTextarea1{
+    width: 70%;
+}
 
 /*------- Cart -------**/
 .cart{
