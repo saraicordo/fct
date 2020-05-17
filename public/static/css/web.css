@@ -150,9 +150,11 @@ button[type=submit]:hover{
     font-size: 30px;
 }
 .fab:hover{
-    color:#ba9b77
+    color:#ba9b77;
+    cursor: pointer;
 }
-/*------- Index -------**/
+
+/*------- Home -------**/
 .main-title{
     font-size: 3rem;
     padding-top: 20px;
@@ -176,10 +178,7 @@ button[type=submit]:hover{
 }
 
 /*------- Productos -------**/
-.card-img{
-   
-}
-.card:hover {
+.hover-shadow:hover {
     box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 .card-img-top{
