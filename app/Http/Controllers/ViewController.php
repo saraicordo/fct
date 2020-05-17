@@ -45,4 +45,10 @@ class ViewController extends Controller
             'categories' => Category::all(),
         ]);
     }
+
+    public function contact() {
+        return view('web.contact', [
+            'categories' => Category::all(),
+        ]);
+    }
 }
