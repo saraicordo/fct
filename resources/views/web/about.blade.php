@@ -1,6 +1,6 @@
 @extends ('web.master')
 
-@section('title', 'NombreCategoría')
+@section('title', 'About us')
 
 @section('content')
 

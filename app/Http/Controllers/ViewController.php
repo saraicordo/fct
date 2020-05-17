@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
-use App\Http\Resources\User;
 use App\Product;
+use App\User;
 
 
 class ViewController extends Controller
@@ -39,6 +39,16 @@ class ViewController extends Controller
     public function about() {
         return view('web.about', [
             'categories' => Category::all(),
+        ]);
+    }
+
+    public function cart($id) {
+        $products = Product::where('user_id', '1')->get();
+
+        return view('web.shop.cart', [
+            'categories' => Category::all(),
+            'products' => $products,
+            'user' => User::find(1),
         ]);
     }
 }

@@ -19,8 +19,10 @@
                         </div>
                     </a>
                     <div class="card-footer">
-                        <span class="price-tag">${{ number_format($product->price / 100, 2) }} €</span>
-                        <small class="text-muted float-right">Add to cart</small>
+                        <span class="price-tag">{{ number_format($product->price / 100, 2) }} €</span>
+                        <small class="text-muted float-right">Add to cart
+                            <a><i class="fas fa-cart-plus"></i></a>
+                        </small>
                     </div>
                 </div>
             </div>
