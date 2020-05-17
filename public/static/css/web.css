@@ -2,11 +2,12 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f1ece7;
-    padding: 0 10vw;
+    padding: 0 2%;
 }
 h1,h2,h3,h4,h5,ul,p,a{
     color: #62411e;
 }
+
 h2,h3,h4,h5,ul,html{
     padding: 0;
     margin: 0;
@@ -56,6 +57,9 @@ ul, li{
     p{
         font-size: 11px;
     }
+    body {
+        padding: 0 10%;
+    }
 }
 /*------- Master -------**/
 .wrapper{
@@ -75,7 +79,7 @@ ul, li{
 
 .jumbotron {
     background-color: #f1ece7;
-    padding: 0 0 0 6rem;
+    padding: 0 3%;
 }
 hr{
     border-top: 1px solid rgba(0,0,0,.1);
@@ -149,21 +153,44 @@ button[type=submit]:hover{
     color:#ba9b77
 }
 /*------- Index -------**/
-.display-4{
+.main-title{
     font-size: 3rem;
     padding-top: 20px;
 }
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2362411e' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2362411e' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 50vh;
+}
+
+.products-carousel {
+    width: 50%;
+    height: 60vh; 
+}
+
 /*------- Productos -------**/
 .card-img{
    
 }
+.card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
 .card-img-top{
     padding: 20px 30px;
 }
-
+.price-tag {
+    font-weight: 700;
+}
 /*------- About -------**/
 .about{
-    text-align: justify;
+    text-align: jutify;
 }
 .about1{
     width: 150px;
