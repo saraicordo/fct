@@ -131,6 +131,7 @@
     background: rgba(250,250,250,.8);
     transition: all 1s ease-in-out;
     animation:opacidad ease-in-out 1s;
+    z-index: 1000;
 }
 ul.menu_2{
     display: flex;
@@ -142,20 +143,19 @@ ul.menu_2{
     vertical-align: middle;
     height: 100%;
 }
-ul.menu_2 a{
+ul.menu_2 a, ul.menu_2 span{
     display: block;
     padding: 10px;
     font-size: 25px;
     transition: all 0.2s ease-in-out;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    font-weight: 700;
 }
 .nav_desplegable_2{
     padding-left: 15px;
     justify-content: start;
     display: none;
-    overflow: auto;
-    max-height: 25vh;
 }
 
 /*----- Animación menu ------*/
@@ -212,6 +212,10 @@ ul.menu_2 li:nth-child(1){
 }
 
 /*----- Cruz ------*/
+.cruz {
+    z-index: 2000;
+}
+
 .cruz span:nth-child(1) {
     top: 13px;
     -webkit-transform: rotate(45deg);

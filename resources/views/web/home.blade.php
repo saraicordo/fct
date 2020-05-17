@@ -2,9 +2,11 @@
 
 @section('content')
     <h1 class="main-title">Welcome!</h1>
-    <hr class="my-4">
+  <p class="lead">On this page you can find unique and unmatched products that you will not be able to find anywhere else.</p>
+  <hr class="my-4">
+  <p class="d-none d-md-block">Check out some of our latest products from your local artisans.</p>
+
     <h4 class="d-block d-md-none">Check out our products</h4>
-    <h5 class="d-none d-md-block">Check out some of our latest products from your local artisans.</h5>
     <br>
     <div id="productsCarousel" class="carousel slide m-auto products-carousel" data-ride="carousel">
         <div class="carousel-inner">
