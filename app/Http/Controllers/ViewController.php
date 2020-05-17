@@ -11,13 +11,7 @@ use App\User;
 class ViewController extends Controller
 {
     public function index() {
-        return view('web.index', [
-            'categories' => Category::all(),
-        ]);
-    }
-
-    public function products() {
-        return view('web.products.products', [
+        return view('web.home', [
             'categories' => Category::all(),
             'products' => Product::all(),
         ]);

@@ -13,7 +13,6 @@ use App\Category;
 
 
 Route::get('/', 'ViewController@index');
-Route::get('/products', 'ViewController@products');
 Route::get('/product/{id}', 'ViewController@product');
 Route::get('/category/{id}', 'ViewController@category');
 Route::get('/about', 'ViewController@about');
