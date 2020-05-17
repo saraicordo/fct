@@ -42,6 +42,12 @@ class ViewController extends Controller
         ]);
     }
 
+    public function contact() {
+        return view('web.contact', [
+            'categories' => Category::all(),
+        ]);
+    }
+    
     public function cart($id) {
         $products = Product::where('user_id', '1')->get();
 
