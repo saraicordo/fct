@@ -15,7 +15,7 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">{{$product->name}}</h5>
-                            <p class="card-text">{{$product->description}}</p>
+                            <p class="card-text">{{ textPreview($product->description, 70) }}</p>
                         </div>
                     </a>
                     <div class="card-footer">
@@ -29,4 +29,13 @@
         @endforeach
     </div>
     <hr class="my-4">
+
+    @php
+        function textPreview($text, $numChars) {
+            if (strlen($text) < $numChars) {
+                return $text;
+            }
+            return substr($text, 0, $numChars) . '...';
+        }
+    @endphp
 @stop
