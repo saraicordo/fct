@@ -134,8 +134,8 @@ ul.menu_2 a{
     padding-left: 15px;
     justify-content: start;
     display: none;
-    overflow: auto;
-    max-height: 25vh;
+    /* overflow: auto; */
+    /* max-height: 25vh; */
 }
 
 /*----- Animación menu ------*/

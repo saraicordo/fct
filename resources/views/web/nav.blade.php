@@ -1,9 +1,9 @@
-<div>
+<div class="navbar">
     <div class="logo_responsive">
         <img src="{{ url('static/images/logo.png') }}" class="img-fluid">
     </div>
 
-    <div class="navbar">
+    <div>
         <form class="form-inline">
             <input class="buscador" type="search" placeholder="Search" aria-label="Search">
             <button type="submit"><i class="fas fa-search"></i></button>
@@ -31,7 +31,7 @@
             </div>
         @endif
 
-        @include('web.menu_responsive')
-
     </div>
+    @include('web.menu_responsive')
+
 </div>
