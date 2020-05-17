@@ -14,14 +14,14 @@
                             <img src="{{ asset('static/images/products/' . $product->id . '.png') }}" class="img-fluid, card-img-top" alt="...">
                         </div>
                         <div class="card-body">
-                        <h5 class="card-title">{{$product->name}}</h5>
-                        <p class="card-text">{{$product->description}}</p>
+                            <h5 class="card-title">{{$product->name}}</h5>
+                            <p class="card-text">{{$product->description}}</p>
                         </div>
                     </a>
                     <div class="card-footer">
                         <span class="price-tag">{{ number_format($product->price / 100, 2) }} €</span>
                         <small class="text-muted float-right">Add to cart
-                            <a><i class="fas fa-cart-plus"></i></a>
+                            <a href="/cart"><i class="fas fa-cart-plus"></i></a>
                         </small>
                     </div>
                 </div>
