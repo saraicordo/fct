@@ -16,7 +16,9 @@
                     <h5 class="card-title">Description</h5>
                     <p class="card-text">{{$product->description}}</p>
                     <span class="price-tag">{{ number_format($product->price / 100, 2) }} €</span>
-                    <small class="text-muted float-right">Add to cart</small>
+                    <small class="text-muted float-right">Add to cart
+                        <a href="/cart"><i class="fas fa-cart-plus"></i></a>
+                    </small>
                 </div>
             </div>
         </div>

@@ -35,6 +35,11 @@
         </a>
     </div>
 
+    <br><br>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum consequat orci, nec iaculis nulla feugiat quis. Mauris ultrices justo et magna posuere, nec facilisis lorem tincidunt. Aenean lectus sapien, sagittis ut sodales egestas, bibendum a massa. Fusce bibendum condimentum dui, quis finibus felis congue in. Donec mauris orci, vulputate a nibh sed, dapibus euismod enim. Donec eu tincidunt ex. Quisque tempor lobortis ipsum id gravida. Aliquam feugiat faucibus dolor, sed vestibulum lorem lobortis non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur interdum neque, eu mollis lacus hendrerit ac. Integer nunc neque, egestas in dolor nec, malesuada porta sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec scelerisque erat sed mollis faucibus.
+    </p>
+
+
     <script>
         $('.carousel').carousel({
             interval: 3000
