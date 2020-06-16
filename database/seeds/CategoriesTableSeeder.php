@@ -12,9 +12,9 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-        Category::create(['name' => 'Furniture']);
-        Category::create(['name' => 'Textile']);
-        Category::create(['name' => 'Ceramics']);
-        Category::create(['name' => 'Jewelry']);
+        Category::create(['name' => 'Madera']);
+        Category::create(['name' => 'Téxtiles']);
+        Category::create(['name' => 'Ceramica']);
+        Category::create(['name' => 'Joyería']);
     }
 }

@@ -11,15 +11,15 @@
 
     <form>
         <div class="form-group">
-            <label for="email exampleInputEmail1">Email address</label>
+            <label for="email exampleInputEmail1">Dirección Email</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
         </div>
         <div class="form-group">
-            <label for="password exampleInputPassword1">Password</label>
+            <label for="password exampleInputPassword1">Contraseña</label>
             <input type="password" class="form-control" id="exampleInputPassword1" required>
         </div>
 
-        <button type="submit" class="btn btn-dark">Submit</button>
+        <button type="submit" class="btn btn-dark">Enviar</button>
     </form>
 
 

@@ -11,24 +11,24 @@
 
     <form>
         <div class="form-group">
-            <label for="name">Name</label>
+            <label for="name">Nombre</label>
             <input type="text" class="form-control" required>
         </div>
         
         <div class="form-group">
-            <label for="email exampleInputEmail1">Email address</label>
+            <label for="email exampleInputEmail1">Dirección Email</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
         </div>
         <div class="form-group">
-            <label for="password exampleInputPassword1">Password</label>
+            <label for="password exampleInputPassword1">Contraseña</label>
             <input type="password" class="form-control" id="exampleInputPassword1" required>
         </div>
         <div class="form-group">
-            <label for=" cpassword exampleInputPassword1">Confirm password</label>
+            <label for=" cpassword exampleInputPassword1">Confirmar Contraseña</label>
             <input type="password" class="form-control" id="exampleInputPassword1" required>
         </div>
 
-        <button type="submit" class="btn btn-dark">Sign in</button>
+        <button type="submit" class="btn btn-dark">Registrarse</button>
     </form>
 
       @if(Session::  has('message'))

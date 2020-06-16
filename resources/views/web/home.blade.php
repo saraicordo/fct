@@ -1,12 +1,12 @@
 @extends ('web.master')
 
 @section('content')
-    <h1 class="main-title">Welcome!</h1>
-  <p class="lead">On this page you can find unique and unmatched products that you will not be able to find anywhere else.</p>
+    <h1 class="main-title">¡Bienvenidos!</h1>
+  <p class="lead">En esta página puede encontrar productos únicos e inigualables que no podrá encontrar en ningún otro lado.</p>
   <hr class="my-4">
-  <p class="d-none d-md-block">Check out some of our latest products from your local artisans.</p>
+  <p class="d-none d-md-block">Vea algunos de nuestros últimos productos de sus artesanos locales.</p>
 
-    <h4 class="d-block d-md-none">Check out our products</h4>
+    <h4 class="d-block d-md-none">Vea algunos de nuestros últimos productos de sus artesanos locales.</h4>
     <br>
     <div id="productsCarousel" class="carousel slide m-auto products-carousel" data-ride="carousel">
         <div class="carousel-inner">
@@ -36,7 +36,7 @@
     </div>
 
     <br><br>
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum consequat orci, nec iaculis nulla feugiat quis. Mauris ultrices justo et magna posuere, nec facilisis lorem tincidunt. Aenean lectus sapien, sagittis ut sodales egestas, bibendum a massa. Fusce bibendum condimentum dui, quis finibus felis congue in. Donec mauris orci, vulputate a nibh sed, dapibus euismod enim. Donec eu tincidunt ex. Quisque tempor lobortis ipsum id gravida. Aliquam feugiat faucibus dolor, sed vestibulum lorem lobortis non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur interdum neque, eu mollis lacus hendrerit ac. Integer nunc neque, egestas in dolor nec, malesuada porta sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec scelerisque erat sed mollis faucibus.
+     <p> El Comercio Justo es un sistema comercial solidario y alternativo al convencional que persigue el desarrollo de los pueblos y la lucha contra la pobreza. Se basa en: Condiciones laborales y salarios adecuados para los productores, que les permitan vivir con dignidad. Sin explotación laboral infantil.
     </p>
 
 

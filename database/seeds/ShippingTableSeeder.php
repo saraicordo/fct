@@ -13,9 +13,9 @@ class ShippingTableSeeder extends Seeder
     public function run()
     {
         Shipping::create([
-            'address' => 'C/ Pedrera, 3, 4º 2ª',
-            'postal_code' => '08010',
-            'city' => 'Barcelona',
+            'address' => 'C/ Temple, 4, 4ºD',
+            'postal_code' => '15679',
+            'city' => 'A Coruña',
             'country' => 'España'
         ]);
     }

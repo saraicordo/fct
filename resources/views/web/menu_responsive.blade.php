@@ -1,6 +1,6 @@
     <div class="menu_responsive">
         <ul class="menu_2">
-            <li><a href="/"><span class="current">home</span></a>
+            <li><a href="/"><span class="current">Home</span></a>
             </li>
             <li><span class="nav-link dropdown-toggle flecha2">categories</span>
                 <ul class="nav_desplegable_2 flex-column">
