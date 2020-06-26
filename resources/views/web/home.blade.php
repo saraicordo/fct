@@ -1,12 +1,12 @@
 @extends ('web.master')
 
 @section('content')
-    <h1 class="main-title">¡Bienvenidos!</h1>
-  <p class="lead">En esta página puede encontrar productos únicos e inigualables que no podrá encontrar en ningún otro lado.</p>
+    <h1 class="main-title">Welcome!</h1>
+  <p class="lead">On this page you can find unique and unmatched products that you will not be able to find anywhere else.</p>
   <hr class="my-4">
-  <p class="d-none d-md-block">Vea algunos de nuestros últimos productos de sus artesanos locales.</p>
+  <p class="d-none d-md-block">See some of our latest products from your local artisans</p>
 
-    <h4 class="d-block d-md-none">Vea algunos de nuestros últimos productos de sus artesanos locales.</h4>
+    <h4 class="d-block d-md-none">See some of our latest products from your local artisans.</h4>
     <br>
     <div id="productsCarousel" class="carousel slide m-auto products-carousel" data-ride="carousel">
         <div class="carousel-inner">
@@ -36,8 +36,7 @@
     </div>
 
     <br><br>
-     <p> El Comercio Justo es un sistema comercial solidario y alternativo al convencional que persigue el desarrollo de los pueblos y la lucha contra la pobreza. Se basa en: Condiciones laborales y salarios adecuados para los productores, que les permitan vivir con dignidad. Sin explotación laboral infantil.
-    </p>
+
 
 
     <script>

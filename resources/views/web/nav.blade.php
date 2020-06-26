@@ -23,7 +23,7 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 @auth
-                                    <a href="{{ url('/logout') }}" class="dropdown-item">Cerrar sesión</a>
+                                    <a href="{{ url('/logout') }}" class="dropdown-item">Close session</a>
                                 @else
                                     <a href="{{ route('login') }}" class="dropdown-item">Login</a>
                                     @if (Route::has('register'))
