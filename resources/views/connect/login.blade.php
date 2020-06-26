@@ -11,15 +11,15 @@
 
     <form>
         <div class="form-group">
-            <label for="email exampleInputEmail1">Dirección Email</label>
+            <label for="email exampleInputEmail1">Email</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
         </div>
         <div class="form-group">
-            <label for="password exampleInputPassword1">Contraseña</label>
+            <label for="password exampleInputPassword1">Password</label>
             <input type="password" class="form-control" id="exampleInputPassword1" required>
         </div>
 
-        <button type="submit" class="btn btn-dark">Enviar</button>
+        <button type="submit" class="btn btn-dark">Send</button>
     </form>
 
 
@@ -43,8 +43,8 @@
     @endif
 
     <div class="pie">
-        <a href="{{ url('/register') }}"> ¿No tienes una cuenta?, Registrate</a>
-        <a href="{{ url('/recover') }}"> Recuperar contraseña</a>
+        <a href="{{ url('/register') }}"> Don't have an account? Register</a>
+        <a href="{{ url('/recover') }}"> Recover password</a>
     </div>
 </div>
 @stop

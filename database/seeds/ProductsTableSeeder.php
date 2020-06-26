@@ -13,24 +13,24 @@ class ProductsTableSeeder extends Seeder
     public function run()
     {
         Product::create([
-            'name' => 'Collar Titanic',
-            'description' => 'Este collar fue encontrado en el Titanic.',
+            'name' => 'Titanic Necklace',
+            'description' => 'This necklace was found in the Titanic.',
             'category_id' => 4,
             'image' => '',
             'price' => 15000,
             'user_id' => 1,
         ]);
         Product::create([
-            'name' => 'Mesa de roble',
-            'description' => 'Esta tabla fue encontrada en el bosque negro, en Alemania.',
+            'name' => 'Oak Table',
+            'description' => 'This table was found in the black forest, in Germany.',
             'category_id' => 1,
             'image' => '',
             'price' => 2000,
             'user_id' => 1,
         ]);
         Product::create([
-            'name' => 'Bolso de punto',
-            'description' => 'Este bolso tejido a mano combina con tu estilo.',
+            'name' => 'Woven bag',
+            'description' => 'This hand-woven bag matches your style.',
             'category_id' => 2,
             'image' => '',
             'price' => 1000,
@@ -38,103 +38,103 @@ class ProductsTableSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Shar Pei',
-            'description' => 'Este Shar Pei decorará tu jardín, tus vecinos querrán acariciarlo.',
+            'description' => 'This Shar Pei will decorate your garden, your neighbors will want to caress it.',
             'category_id' => 3,
             'image' => '',
             'price' => 4500,
             'user_id' => 1,
         ]);
         Product::create([
-            'name' => 'Silla decorativa',
-            'description' => 'Esta silla decorará tus habitaciones con clase, tallada en madera de castaño.',
+            'name' => 'Decorative chair',
+            'description' => 'This chair will decorate your rooms with class, carved with chestnut wood.',
             'category_id' => 1,
             'image' => '',
             'price' => 5000,
             'user_id' => 1,
         ]);
         Product::create([
-            'name' => 'Muñeca',
-            'description' => 'La futura muñeca favorita de tus hijos, con materiales sostenibles',
+            'name' => 'Doll',
+            'description' => 'Your children`s future favorite doll, with sustainable materials',
             'category_id' => 2,
             'image' => '',
             'price' => 1500,
             'user_id' => 1,
         ]);
         Product::create([
-            'name' => 'Caracol',
-            'description' => 'Este caracol no se comerá tus flores, solo con su belleza las hará más hermosas.',
+            'name' => 'Snail',
+            'description' => 'This snail will not eat your flowers, with their beauty alone they will make them more beautiful.',
             'category_id' => 3,
             'image' => '',
             'price' => 7500,
             'user_id' => 1,
         ]);
         Product::create([
-            'name' => 'Bracalete de amatista',
-            'description' => 'Si la amatista es su piedra de nacimiento, le traerá felicidad y prosperidad, y si no lo es, también la tendrá',
+            'name' => 'Amethyst bracelet',
+            'description' => 'If the amethyst is your birthstone, it will bring you happiness and prosperity, and if it is not, you will also have it.',
             'category_id' => 4,
             'image' => '',
             'price' => 9000,
             'user_id' => 1,
         ]);
         Product::create([
-            'name' => 'Colgate de Turmalina',
-            'description' => 'Si quieres ser el más elegante de la reunión social del club, no dudes en comprar este collar de turmalina, atraerá la atención de todos.',
+            'name' => 'Tourmaline necklace',
+            'description' => 'If you want to be the most elegant of the club social gathering, do not hesitate to buy this tourmaline necklace, it will attract everyone´s attention.',
             'category_id' => 4,
             'image' => '',
             'price' => 30000,
             'user_id' => 2,
         ]);
         Product::create([
-            'name' => 'Mural de peces',
-            'description' => 'Si te gustan los peces pero no tienes tiempo para tener un acuario, no lo dudes, con este hermoso mural tendrás el mar en tu casa.',
+            'name' => 'Fish mural',
+            'description' => 'If you like fish but do not have time to have an aquarium, do not hesitate, with this beautiful mural you will have the sea in your house.',
             'category_id' => 3,
             'image' => '',
             'price' => 40000,
             'user_id' => 2,
         ]);
         Product::create([
-            'name' => 'Bolas antiestres',
-            'description' => 'Si te sientes estresado con estas bolas, te sentirás relajado nuevamente, hecho con materiales sostenibles y tintes naturales.',
+            'name' => 'Antistress balls',
+            'description' => 'If you feel stressed with these balls, you will feel relaxed again, made with sustainable materials and natural dyes.',
             'category_id' => 2,
             'image' => '',
             'price' => 800,
             'user_id' => 2,
         ]);
         Product::create([
-            'name' => 'Mesa de arpa',
-            'description' => 'Esta mesa, que recicla elementos del arpa, será el centro de atención en su sala de estar.',
+            'name' => 'Harp table',
+            'description' => 'This table, recycling elements from the harp, will be the center of attention in your living room.',
             'category_id' => 1,
             'image' => '',
             'price' => 87800,
             'user_id' => 2,
         ]);
         Product::create([
-            'name' => 'Estantería',
-            'description' => 'Con este estante puede ordenar los libros que ha leído o pretender haber leído.',
+            'name' => 'Shelving',
+            'description' => 'With this shelf you can order the books you have read or pretend to have read.',
             'category_id' => 1,
             'image' => '',
             'price' => 7500,
             'user_id' => 2,
         ]);
         Product::create([
-            'name' => 'Bolso de cuero',
-            'description' => 'Este bolso de cuero, con todos sus bolsillos, será el compañero de viaje ideal..',
+            'name' => 'Leather bag',
+            'description' => 'This leather bag, with all its pockets, will be the ideal travel companion.',
             'category_id' => 2,
             'image' => '',
             'price' => 6000,
             'user_id' => 2,
         ]);
         Product::create([
-            'name' => 'Anillos',
-            'description' => 'Esta colección de anillos, con piedras naturales, decorará tus manos..',
+            'name' => 'Rings',
+            'description' => 'This collection of rings, with natural stones, will decorate your hands.',
             'category_id' => 4,
             'image' => '',
             'price' => 6000,
             'user_id' => 2,
         ]);
         Product::create([
-            'name' => 'Florero de vidrio',
-            'description' => 'Este jarrón decorará tu apartamento con sus cristales pintados a mano.',
+            'name' => 'Glass vase',
+            'description' => 'This vase will decorate your apartment with its hand-painted crystals.',
             'category_id' => 3,
             'image' => '',
             'price' => 6000,

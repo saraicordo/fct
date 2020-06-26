@@ -10,7 +10,7 @@
         </form>
         <div class="d-flex flex-row p-2">
             <div class="pt-2 justify-content-end ml-md-5 ml-1">
-                <a href="{{ URL::action('ViewController@cart', '1') }}">
+                <a href="{{ URL::action('ViewController@cart') }}">
                     <i class=" fas fa-shopping-cart icon-cart"></i>
                 </a>
             </div>

@@ -299,7 +299,7 @@ footer{
 }
 .cart-2{
     padding: 0 25px;
-    width:80%;
+    width:100%;
     border-left: 1px solid rgba(0,0,0,.1);
     display: flex;
     flex-direction: column;
@@ -324,3 +324,18 @@ footer{
     justify-content: space-between;
 }
 
+.an1{
+    width:25%;
+    float: left;
+    display: block;
+}
+.an2{
+    width: 50%;
+    float: left;
+    display: block;
+}
+.an3{
+    width: 25%;
+    float: left;
+    display: block;
+}
