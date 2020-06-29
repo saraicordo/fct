@@ -19,6 +19,7 @@ Route::get('/about', 'ViewController@about');
 Route::get('/contact', 'ViewController@contact');
 Route::get('/fairtrade', 'ViewController@fairtrade');
 Route::get('/cart/{id}', 'ViewController@addtocart'); 
+Route::get('/removecart/{id}', 'ViewController@removecart'); 
 Route::get('/cart', 'ViewController@cart'); 
 
 

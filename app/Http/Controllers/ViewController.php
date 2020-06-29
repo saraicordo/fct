@@ -9,8 +9,10 @@ use App\User;
 
 
 class ViewController extends Controller
+
 {
-    public $carrito = 0;
+
+
 
     public function index() {
         return view('web.home', [
@@ -57,6 +59,8 @@ class ViewController extends Controller
     }
 
     public function addtocart($id=null) {
+       
+        $products = Product::where('user_id', '1')->get();
 
         $product = product::find($id);
           
@@ -64,82 +68,75 @@ class ViewController extends Controller
 
                 abort(404);
         }
+        
         $cart = session()->get('cart');
 
         if(!$cart) {
 
-            $cart = [
+            $cart['productos'] = array();
+            $cart['total'] = 0;
+            
+            $qty = 1;
+            $price = $product->price * $qty;
+        
+            $cart['productos'][$product->id] = array('producto'=>$product, 'qty'=>$qty,'price'=>$product->price);
+            $cart['total'] = $price;
+            
+            
+
+            /*$cart = [
                 $id => [
                     "name" => $product->name,
                     "qty" => 1,
                     "price" => $product->price,
                 ]
-                ];
+                ];*/
 
-                session()->put('cart', $cart);
-                return redirect()->back()->with('success', 'Product added to cart successfully');
-        }
+                
+        } else {
 
-        if(isset($cart[$id])) {
-               $cart[$id]['qty']++;
-               session()->put('cart', $cart);
-               return redirect()->back()->with('success', 'Product added to cart successfully');
+            if(isset($cart['productos'][$product->id])) {
+                $cart['productos'][$product->id]['qty']++;
+                
+            } else {
+                $cart['productos'][$product->id] = array('producto'=>$product, 'qty'=>1,'price'=>$product->price);
+            }
+
+            $cart['total'] += $product->price;
+            
+            
+        
         } 
 
-        $cart[$id] = [
-            "name"=> $product->name,
-            "qty"=>1,
-            "price"=> $product->price,
-
-        ];
-
         session()->put('cart', $cart);
-        return redirect()->back()->with('success', 'Product added to cart successfully');
 
-    }
-
-        
-
-       /* $this->carrito++;
-
-        $products = Product::where('user_id', '1')->get();
-        $cart = [];
-        $product = Product::findOrFail($id);
-        
-        $cart['productos'] = array();
-        $cart['total'] = 0;
-
-        /*if(isset($_SESSION['cart'])) {
-            $cart['total']++;
-            $cart = $_SESSION['cart'];
-        } else $_SESSION['cart'] = $cart;
-        
-        //dd($_SESSION['cart']);*/
-        
-    
-        /*if($id != null) {
-            $qty = 1;
-            $price = $product->price * $qty;
-        
-            $cart['productos'][] = array('producto'=>$product, 'qty'=>$qty,'price'=>$price);
-            $cart['total'] = $price; 
-        }
-        //$_SESSION['cart'] = $cart;
+      
 
         return view('web.shop.cart', [
             'categories' => Category::all(),
             'products' => $products,
             'user' => User::find(1),
-            'cart' => $cart  
-        ]);*/
+            'cart' => $cart 
+        ]);
+    
+
+
+    }
+
+        
+
 
         
         
 
     public function cart() {
 
-        $cart['productos']= array();
-        $cart['total'] = 0; 
+        $cart = session()->get('cart');
+
+        if(!$cart) {
+            $cart['productos']= array();
+            $cart['total'] = 0; 
+        } 
 
         return view('web.shop.cart', [
             'categories' => Category::all(),
@@ -147,5 +144,28 @@ class ViewController extends Controller
             'cart' => $cart  
             
         ]);
+    }
+
+    public function removecart($id=null) {
+       
+        $cart = session()->get('cart');  
+
+        if(isset($cart['productos'][$id])) {
+
+            $price = $cart['productos'][$id]['producto']->price*$cart['productos'][$id]['qty'];
+            unset($cart['productos'][$id]);
+            $cart['total'] -= $price;
+            session()->put('cart', $cart);
+            
+        } 
+
+        return view('web.shop.cart', [
+            'categories' => Category::all(),
+            'user' => User::find(1),
+            'cart' => $cart  
+            
+        ]);
+        
+
     }
 }
