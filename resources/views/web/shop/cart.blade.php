@@ -37,7 +37,7 @@
             </div>
             <div class="cart-subtotal-2">
                 <span class="price-tag">{{ number_format($cart['total'] / 100, 2) }} €</span>
-                <button type="button" class="btn btn-success"><a href="https://www.paypal.com/es/webapps/mpp/home">Tramitar pedido</a></button>
+                <button type="button" class="btn btn-warning"><a href="https://www.paypal.com/es/webapps/mpp/home">Tramitar pedido</a></button>
             </div>
         </div>
     
